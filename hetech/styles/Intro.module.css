@@ -1,0 +1,88 @@
+.container {
+    width: 100%;
+    height: calc(100vh - 50px);
+    display: flex;
+    overflow: hidden;
+    background-color: black;
+
+}
+
+.card {
+    position: relative;
+    flex: 1;
+    padding: 100px;
+    padding-right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+    object-fit: cover;
+    color: white;
+}
+
+.circle {
+    height: 100vh;
+    width: 100vh;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 999;
+    opacity: 0.8;
+}
+
+
+.title {
+    font-size: 50px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.brand {
+    color: green;
+}
+
+.desc {
+    font-size: 20px;
+    margin: 0;
+}
+
+.button {
+    border: none;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    width: 150px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+@keyframes button {
+    to {
+        background-color: rgb(2, 63, 2);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .circle1 {
+        right: -50vh;
+        bottom: -50vh;
+    }
+
+    .card {
+        padding: 50px;
+        align-items: center;
+        text-align: center;
+        justify-content: space-between;
+    }
+
+    .title {
+        font-size: 30px;
+    }
+
+    .desc {
+        display: none;
+    }
+}
